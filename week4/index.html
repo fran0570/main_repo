@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<!-- THE SHORTCUT TO ADD COMMENTS OR CONVERT TEXT TO COMMENT IS CMD+/ -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <Title>Week 4</Title>
+</head>
+
+<body>
+    <!-- Document content -->
+    <!-- Relative path -->
+    <img src="images/coffee-shop.jpg"
+        alt=" coffee shop fresh coffee - here you insert descriptive word to make your website easier to find in search engines">
+    <!-- this is the relative from index.html to the coffee-shop image -->
+    <!-- Absolute path -->
+    <img src="https://cache.desktopnexus.com/cropped-wallpapers/1349/1349415-1600x900-[DesktopNexus.com].jpg?st=SUij6jcx0LvEiqoK_u0zFg&amp;e=1664386765"
+        alt="bird sitting on a tree branch" title="Bird on Branch" width="300" height="300">
+
+    <!-- This is the section on anchors; anchors are how we link everything on a website -->
+    <h1>HTML Anchors</h1>
+    <!--this opens up the linked page on top not recommended for external links it directs people away form your own webpage-->
+    <p>When in doubt <a href="https://google.ca">Google</a> it out!</p>
+    <!--this opens up link in another tab better for external links so your own page stays open-->    
+    <p>When in doubt <a href="https://google.ca" target="_blank">Google</a> it out!!</p>
+
+    <a href="#cakes">Jump to the cakes menu</a>
+    <a href="#paragraphE">Jump to the third paragraphE</a>
+    <a href="#fullname">Jump to form</a>
+
+    <p id="paragraphA">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+        standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+        a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+        remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
+        Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions
+        of Lorem Ipsum.
+    </p>
+    <p id="paragraphB">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+        standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+        a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+        remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
+        Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions
+        of Lorem Ipsum.
+    </p>
+    
+    <ul id="cakes">
+        <li>Red Velvet</li>
+        <li>Black Forest</li>
+        <li>Chocolat</li>
+        <li>Carrot</li>
+    </ul>
+
+    <p id="paragraphC">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+        standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+        a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+        remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
+        Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions
+        of Lorem Ipsum.
+    </p>
+
+    <p id="paragraphD">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+        standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+        a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+        remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
+        Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions
+        of Lorem Ipsum.
+    </p>
+
+    <p id="paragraphE">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+        standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+        a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+        remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
+        Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions
+        of Lorem Ipsum.
+    </p>
+
+    <!-- HTML Forms-->
+    <form action="thanks.html" method="post">
+        <fieldset><!--fieldset create a "fieldset" or box that seperates and incubsulates the content-->
+            <label for="fullname">Name</label>
+            <!-- required is a boolean attribute -->
+            <input type="text" name="fullname" id="fullname" placeholder="John Doe" value="Mr." required>
+        </fieldset>
+        
+        <fieldset>
+            <label for="quantity">Quantity</label>
+            <input type="number" name="quantity" id="quantity" min="2" max="10" step="2">
+        </fieldset>
+
+        <fieldset>
+            <label for="message">Your Message</label>
+            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        </fieldset>
+
+        <fieldset>
+            <label for="planet">What's Your Favorite Planet?</label>
+            <select name="planet" id="planet">
+                <option value="mars">Mars</option>
+                <option value="jupiter">Jupiter</option>
+                <option value="earth">Earth</option>
+                <option value="pluto" selected>Pluto</option><!--selected boolean attributes make pluto the selected option istead of the default mars-->
+            </select>
+        </fieldset>
+
+        <h3>What music do you like</h3>
+        <label for="pop">Pop</label>
+        <input type="checkbox" name="pop" id="pop">
+
+        <label for="jazz">Jazz</label>
+        <input type="checkbox" name="jazz" id="jazz">
+
+        <label for="rock">Rock</label>
+        <input type="checkbox" name="rock" id="rock">
+
+        <fieldset>
+            <legend>Music</legend><!--legend makes a little box arround the radio buttons with a name-->
+            <h3> How many hours do you spend listening to music</h3>
+            <label for="little">0-1</label>
+            <input type="radio" name="musictime" id="little" value="0-1">
+
+            <label for="some">2-3</label>
+            <input type="radio" name="musictime" id="some" value="2-3">
+
+            <label for="alot">4-5</label>
+            <input type="radio" name="musictime" id="alot" value="4-5">
+        </fieldset>
+    </form>
+
+    <!-- HTML Tables -->
+    <table>
+        <!-- All the table data add here in proper tags -->
+        <caption>Student Information</caption>
+        <!-- These are the rows -->
+        <thead>
+            <th>Name</th>
+            <th>Level</th>
+            <th>Section</th>
+            <th>Student Number</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Bob</td>
+                <td>Level 1</td>
+                <td>040</td>
+                <td>32413241</td>
+            </tr>
+
+            <tr>
+                <td>Fran</td>
+                <td>Level 2</td>
+                <td>050</td>
+                <td>43513515</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2">Name</th>
+                <th colspan="2">Scores</th>
+            </tr>
+            <tr>
+                <th>Maths</th>
+                <th>English</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Bob</td>
+                <td>10/10</td>
+                <td>9/10</td>
+            </tr>
+            <tr>
+                <td>Fran</td>
+                <td>10/10</td>
+                <td>8/10</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table>
+        <caption>Meal Plan</caption>
+        <thead>
+            <tr>
+                <th></th>
+                <th><span>Sunday</span></th>
+                <th><span>Monday</span></th>
+                <th><span>Tuesday</span></th>
+                <th><span>Wednesday</span></th>
+                <th><span>Thursday</span></th>
+                <th><span>Friday</span></th>
+                <th><span>Saturday</span></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Breakfast</th>
+                <td>Pizza</td>
+                <td>Pizza</td>
+                <td>Pizza</td>
+                <td>Pizza</td>
+                <td>Pizza</td>
+                <td>Pizza</td>
+                <td>Pizza</td>
+            </tr>
+            <tr>
+                <th>Lunch</th>
+                <td>Kraft Dinner</td>
+                <td>Kraft Dinner</td>
+                <td>Kraft Dinner</td>
+                <td>Kraft Dinner</td>
+                <td>Kraft Dinner</td>
+                <td>Kraft Dinner</td>
+                <td>Kraft Dinner</td>
+            </tr>
+            <tr>
+                <th>Dinner</th>
+                <td>caviar</td>
+                <td>caviar</td>
+                <td>caviar</td>
+                <td>caviar</td>
+                <td>caviar</td>
+                <td>caviar</td>
+                <td>caviar</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+
+
+</html>
