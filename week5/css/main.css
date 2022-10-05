@@ -1,3 +1,171 @@
-body{
+/* Using the body selector styling two properties by adding two declarations */
+/* body{ */
+    /* this is a declaration */
+    /* background-color: red;
+    font-size: 20px;
+    font-family: sans-serif;
+} */
+
+/* This is targeting all h1, h2, h3 and h4 on the page */
+/* h1, h2, h3, h4{
+    font-family: serif;
+    color: white;
+} */
+
+/* Background will change the colour of the element */
+/* p{
+    background-color: yellow;
+} */
+
+/* desendant selection to tagget specific elements of the webpage */
+/* article h2 {
+    color: brown;
+} */
+/* desendant selection to tagget specific elements of the webpage */
+/* article section h3{
+    border: 1px solid rebeccapurple;
+} */
+
+.navbar {
+    display: flex;
+    padding: 10px;
+    background-color: black;
+    font-family: sans-serif;
+}
+/* decendant combinator */
+.navbar > a {
+    padding: 10px;
+    text-decoration: none;
+}
+/* child combinator */
+.dropdown-content {
+    background-color: #f9f9f9;
+}
+
+#events {
+    background-color: aquamarine;
+}
+
+.div-title {
+    font-size: 45px;
+    background-color: blueviolet;
+}
+
+.content {
+    font-size: 45px;
+}
+
+.content .events-para {
+    font-size: 18px;
+}
+
+/* Elements CSS Selector */
+p {
+    background-color: pink;
+}
+
+/* Class Selector used to select for more then one element */
+.my-class {
+    background-color: green;
+}
+ /* ID Attribute Selector */
+#my-unique-id {
+    background-color: crimson;
+}
+
+/* Attribute CSS Selector */
+[data-custom ="my-data-custom"]{
+    background-color: chartreuse;
+}
+
+p:nth-child(5){
     background-color: red;
+}
+
+.one {
+    background-color: rebeccapurple;
+}
+.two {
+    background-color: blue;
+}
+
+.highlight {
+    font-weight: bold;
+}
+
+.x {
+    font-size: 2rem;
+    background-color: yellow;
+}
+
+html, body {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxes {
+    display: flex;
+}
+.box {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    background-color: red;
+}
+
+.box:hover {
+    background-color: cadetblue;
+}
+/* .box:hover +.box{
+    background-color: cadetblue;
+}
+.box:hover ~.box{
+    background-color: cadetblue;
+} */
+
+a {
+    color: blue;
+}
+/* this is for internal links beganing with "#" */
+a[href^="#"] {
+    background-color: gold;
+}
+a[href^="example"] {
+    background-color: silver;
+}
+
+a {
+    padding: 10px;
+    text-decoration: none;
+}
+a:link {
+    color: cadetblue;
+}
+a:visited {
+    color: rebeccapurple;
+}
+a:hover, a:focus {
+    background-color: goldenrod;
+}
+
+ul:first-child {
+    font-weight: bold;
+}
+
+p:last-child {
+    font-style: italic;
+}
+li:nth-child(2) {
+    background-color: blueviolet;
+    color: red;
+}
+li:nth-child(odd) {
+    background-color: black;
+    color: white;
+}
+.box:nth-child(4n +1) {
+    background-color: cadetblue;
 }
