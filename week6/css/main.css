@@ -50,8 +50,7 @@ table {
 }
 /* ************************************************************* */
 
-
-body{
+body {
     margin: 10%;
     font-family: Arial, Helvetica, sans-serif;
     /* we are forcing the default font size of the page to 16px */
@@ -62,9 +61,9 @@ body{
     background-color: #fff;
 }
 
-h1{
+h1 {
     /* margin is what is on the outside of the text */
-    margin:  0 0 1.5rem 0;
+    margin: 0 0 1.5rem 0;
     /* background-color: aquamarine; */
     /* the padding is the iniside of the text */
     padding: 20px;
@@ -74,7 +73,7 @@ h1{
     font-weight: 800;
 }
 
-header{
+header {
     font-size: 2rem;
     padding: 20px;
     background-image: url("../images/bread.jpg");
@@ -84,21 +83,21 @@ header{
     width: 100%;
 }
 
-p{
+p {
     /* since we specified in the body that font size is = to 16px then 1 rem is equivalent to 16px */
     /* font-size: 2rem; */
-    margin-bottom: 24px;    
+    margin-bottom: 24px;
     margin-top: 0px;
 }
 
-h2{
+h2 {
     font-size: 24px;
     color: #ba3925;
     margin-top: 36px;
     margin-bottom: 12px;
 }
 
-div{
+div {
     background-image: url("../images/white_brick_wall.png");
     /* background-repeat: no-repeat; */
 }
