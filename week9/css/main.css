@@ -1,0 +1,86 @@
+html {
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+img {
+    display: none;
+}
+.container1 {
+    width: 100px;
+    height: 100px;
+    background-color: cadetblue;
+    border: 5px solid burlywood;
+    margin: 0 auto;
+    border-radius: 25%;
+}
+.container2 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(39, 77, 78);
+    border: 5px solid rgb(194, 156, 108);
+    margin: 0 auto;
+    border-radius: 25%;
+}
+
+/* the mobile of approche */
+/* We setup the setting for mobile devices here first */
+@media screen (and min-widht:400px) and (max-width: 650px) {
+    html{
+        font-size: 24px;
+    }
+    h1{
+        font-size: 4rem;
+    }
+    p{
+        font-size: 36px;
+        color: red;
+    }
+
+    .container1 {
+        width: 250px;
+        height: 250px;
+        background-color: cadetblue;
+        border: 5px solid burlywood;
+        margin: 0 auto;
+        border-radius: 25%;
+    }
+    .container2 {
+        width: 250px;
+        height: 250px;
+        border-radius: 25%;
+        margin: 0 auto;
+        background-image: url(https://via.placeholder.com/150);
+    }
+}
+
+/* We then move on to the next largest device in our desired list ie. table and then after that we could go setup for desktop */
+@media screen and (min-width: 900px) {
+    html {
+
+    }
+    h1 {
+        font-size: 4rem;
+        color: blue;
+    }
+    p {
+        font-size: 42px;
+        color: black;
+    }
+
+    img {
+        display: block;
+    }
+    .container2 {
+        width: 650px;
+        height: 650px;
+        background-image: url(http://upload.wikimedia.org/wikipedia/commons/3/30/Borneoelephants.jpg);
+    }
+    
+}
+
+
+
