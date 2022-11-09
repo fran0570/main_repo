@@ -1,0 +1,74 @@
+body {
+    color: #333;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/*************************************
+Parent needed to style flexbox
+*************************************/
+.container {
+    margin: 0 0 50px 0;
+    padding: 5px;
+    background-color: #4980d2;
+
+    /* max-width: 300px; */
+    /* height: 250px; */
+
+    /* this is the property require to start using the flexbox model */
+    display: flex;
+    /* flex-direction : row/row-reverse/column/column-reverse */
+    /* flex-direction: column-reverse; */
+    /* this is the default flexbox direction property*/
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content property allows you to set howl the childre are distrubed 
+    flex-start/flex-end/center/space-around/space-between/space-evenly*/
+    /* this is the default justify property */
+    justify-content: flex-start;
+    /* align tiems property defines which default behavior for how chldren are laid along the cross axis 
+    stretch/flex-start/flex-end/center/baseline*/
+    /* this is the default */
+    /* align-items: stretch; */
+    /* align-items: flex-start; */
+
+
+}
+/* where styling all four boxing since we gave them the same class name */
+.box {
+    padding: 2rem;
+    margin: 5px;
+    text-align: center;
+    background-color: #cee3fe;
+
+    /* Flex item sizing. Three properies control the ability to dynamically adjust to its container 
+    flex-basis/flex-shrink/flex-grow */
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+    /* Shorthand version
+    flex: 1 1 0 */
+}
+
+.one {
+    order: -2;
+}
+
+.two {
+    order: 1;
+}
+
+.three {
+    /* this will resize this item according the sibling */
+    flex: 2 1 0;
+    order: -1;
+}
+
+.four {
+    /* this will resize this item according the sibling */
+    flex: 4 1 0;
+    /* flex items by using propery of order on each child element */
+    order: -2;
+}
+
+/* .box:nth-child(2n) {
+    padding-top: 85px;
+} */
