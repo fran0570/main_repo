@@ -1,3 +1,13 @@
+/* personal note:
+   create a vs addon that when you right click on a tag
+   in an html document a option called create css selector is 
+   available and when used will automatically create the 
+   corresponding selector in your linked css document. 
+   If a selector is already created then will point or 
+   direct user toward it.    
+   */
+/* ************************************************************* */
+
 body {
     font-family: 'Poppins', sans-serif;
 }
